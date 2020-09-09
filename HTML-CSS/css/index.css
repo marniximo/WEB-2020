@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam&display=swap');
+
+*{
+    font-family: 'Kufam', cursive;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+.navbar>ul>li{
+    display: inline;
+    list-style-type: none;
+    font-size: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+header{
+    overflow: hidden;
+    background-color: #333333;
+}
+
+.navbar>ul>li>a{
+    font-family: 'Kufam', cursive;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar>ul>li>a:hover{
+    color:wheat;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width:75%;
+}
+
+.description{
+    border-top-width: 1px;
+    border-top-color: black;
+    border-top-style: solid;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    width:75%;
+}
+
+#img1{
+    width: 453px;
+    height: 250px;
+    margin: 100px;
+}
+
+#img2{
+    width: 343px;
+    height: 250px;
+    margin: 100px;
+}
+
+.table-div{
+    border-top-style: solid;
+    border-width: 1px;
+    border-bottom-style: solid;
+    text-align: center;
+    
+}
+
+.table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+    color: white;
+    background-color: #333333;
+}
+
+.table td, .table th {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.table tr:nth-child(even){
+    background-color: #555555;
+}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: black;
+}
