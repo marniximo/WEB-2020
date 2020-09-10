@@ -10,9 +10,18 @@ body{
 }
 
 .navbar{
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 50px;
+    height: 40px;
+}
+
+.navbar>ul{
+    float: right;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.title{
+    margin-left: 100px;
+    float:left;
 }
 
 .navbar>ul>li{
@@ -21,6 +30,11 @@ body{
     font-size: 25px;
     margin-left: 40px;
     margin-right: 40px;
+}
+
+h1{
+    color: darksalmon;
+    font-size: 30px;
 }
 
 header{
@@ -70,9 +84,7 @@ header{
 .table-div{
     border-top-style: solid;
     border-width: 1px;
-    border-bottom-style: solid;
     text-align: center;
-    
 }
 
 .table {
@@ -98,4 +110,14 @@ header{
     padding-bottom: 12px;
     text-align: left;
     background-color: black;
+}
+
+footer{
+    margin-top: 25px;
+    background-color:#333333;
+    color:white;
+}
+
+.footer-text{
+    padding:10px;
 }
