@@ -194,3 +194,16 @@ footer{
     height: 300px;
     width: 300px;
 }
+
+#presentation-mariano{
+    background-image: url('../img/blue-denim-texture-background.jpg');
+    background-size: 400px;
+    background-position-x: center;
+    background-position-y: -100px;
+    background-color: #14213d;
+    color: #E5E5E5;
+}
+
+#presentation-mariano>h1{
+    color: #E9C46A;
+}
