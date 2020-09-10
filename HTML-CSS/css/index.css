@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kufam&display=swap');
 
-*{
+html{
     font-family: 'Kufam', cursive;
 }
 
@@ -30,11 +30,20 @@ body{
     font-size: 25px;
     margin-left: 40px;
     margin-right: 40px;
+    
 }
 
 h1{
     color: darksalmon;
     font-size: 30px;
+}
+
+#active{
+    color: lightskyblue;
+}
+
+#active:hover{
+    color: wheat;
 }
 
 header{
@@ -44,8 +53,8 @@ header{
 
 .navbar>ul>li>a{
     font-family: 'Kufam', cursive;
-    color: white;
     text-decoration: none;
+    color: white;
 }
 
 .navbar>ul>li>a:hover{
@@ -88,12 +97,13 @@ header{
 }
 
 .table {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-family: Verdana;
+    font-size: 12px;
     border-collapse: collapse;
     width: 90%;
     margin: auto;
-    color: white;
-    background-color: #333333;
+    color: black;
+    background-color: #333;
 }
 
 .table td, .table th {
@@ -102,14 +112,20 @@ header{
 }
 
 .table tr:nth-child(even){
-    background-color: #555555;
+    background-color: white;
+}
+
+.table tr:nth-child(odd){
+    background-color: lightgray;
 }
 
 .table th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: black;
+    background-color: lightgray;
+    color: black;
+    text-transform: uppercase;
 }
 
 footer{
@@ -120,4 +136,61 @@ footer{
 
 .footer-text{
     padding:10px;
+}
+
+.presentation-cards{
+    text-align: center;
+}
+
+.flip-card {
+    display: inline-flex;
+    margin: 0 50px 0 50px;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+}
+
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+
+.flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.avatar1{
+    height: 300px;
+    width: 300px;
 }
