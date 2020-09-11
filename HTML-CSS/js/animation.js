@@ -35,9 +35,12 @@ var update = function(event) {
 
 var updateTransformStyle = function(x, y) {
     var style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
-    var shadow = -y/4 + 'px ' + x/4 + 'px black, '+
+    var shadow = -y/3 + 'px ' + x/3 + 'px black, '+
+    -y/4 + 'px ' + x/4 + 'px black, '+
+    -y/5 + 'px ' + x/5 + 'px black, '+
     -y/6 + 'px ' + x/6 + 'px black, '+
-    -y/12 + 'px ' + x/12 + 'px black';
+    -y/7 + 'px ' + x/7 + 'px black, '+
+    -y/8 + 'px ' + x/8 + 'px black';
     inner.style.transform = style;
     inner.style.webkitTransform = style;
     inner.style.mozTranform = style;

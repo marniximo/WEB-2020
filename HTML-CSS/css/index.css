@@ -144,7 +144,7 @@ footer{
 
 .flip-card {
     display: inline-flex;
-    margin: 0 50px 0 50px;
+    margin: 5px 50px 5px 50px;
     background-color: transparent;
     width: 300px;
     height: 300px;
@@ -201,9 +201,9 @@ footer{
     background-position-x: center;
     background-position-y: -100px;
     background-color: #14213d;
-    color: #E5E5E5;
+    color: #EAE2A7;
 }
 
 #presentation-mariano>h1{
-    color: #E9C46A;
+    color: #FFC05A;
 }
