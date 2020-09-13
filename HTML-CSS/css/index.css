@@ -207,3 +207,15 @@ footer{
 #presentation-mariano>h1{
     color: #FFC05A;
 }
+
+#presentation-alesio{
+    background-image: url('../img/fondo-alesio.png');
+    background-size: 400px;
+    color: lightcyan;
+    background-position: center;
+    background-position-y: 10px;
+}
+
+#presentation-alesio>h1{
+    color: lightgray;
+}
