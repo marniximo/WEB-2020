@@ -225,3 +225,16 @@ footer{
 #presentation-alesio>h1{
     color: lightgray;
 }
+
+#presentation-natalia{
+    background-image: url('../img/fondo_natalia.jpg');
+    background-size: 400px;
+    background-position-x: center;
+    background-position-y: -100px;
+    color: black;
+}
+
+#presentation-natalia>h1{
+    color: black;
+}
+
