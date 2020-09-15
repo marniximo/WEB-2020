@@ -98,7 +98,9 @@ header{
     border-top-style: solid;
     border-width: 1px;
     text-align: center;
-    margin-bottom: 30px;
+    background-color: #333333;
+    color:white;
+    padding-bottom: 20px;
 }
 
 .table {
@@ -137,6 +139,7 @@ footer{
     margin-top: auto;
     background-color:#333333;
     color:white;
+    border-top: 3px solid white;
 }
 
 .footer-text{
