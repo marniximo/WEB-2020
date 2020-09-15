@@ -13,14 +13,11 @@ body{
     flex-direction: column;
 }
 
-.navbar{
-    height: 40px;
-}
-
 .navbar>ul{
+    margin: 0;
     float: right;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: 22px;
+    padding-bottom: 22px;
 }
 
 .title{
@@ -34,13 +31,15 @@ body{
     font-size: 25px;
     margin-left: 40px;
     margin-right: 40px;
-    
 }
 
 h1{
     color: darksalmon;
     font-size: 40px;
     font-family: Montserrat, cursive;
+    margin: 0;
+    padding-top: 11px;
+    padding-bottom: 11px;
 }
 
 #active{
