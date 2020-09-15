@@ -8,6 +8,9 @@ html{
 body{
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar{
@@ -96,6 +99,7 @@ header{
     border-top-style: solid;
     border-width: 1px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .table {
@@ -131,7 +135,7 @@ header{
 }
 
 footer{
-    margin-top: 25px;
+    margin-top: auto;
     background-color:#333333;
     color:white;
 }
@@ -155,7 +159,6 @@ footer{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
 }
 
-
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -165,11 +168,9 @@ footer{
     transform-style: preserve-3d;
 }
 
-
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
-
 
 .flip-card-front, .flip-card-back {
     position: absolute;
@@ -179,12 +180,10 @@ footer{
     backface-visibility: hidden;
 }
 
-
 .flip-card-front {
     background-color: #bbb;
     color: black;
 }
-
 
 .flip-card-back {
     background-color: dodgerblue;
@@ -199,6 +198,21 @@ footer{
 .avatar1{
     height: 300px;
     width: 300px;
+}
+
+.about-title{
+    margin-left: 50px;
+}
+
+#presentation-dan{
+    background-image: url('../img/fondo_dante.jpg');
+    background-size: cover;
+    background-color: #14213d;
+    color: #ffffff;
+}
+
+#presentation-dan>h1{
+    color: #ffffff;
 }
 
 #presentation-mariano{
@@ -237,4 +251,3 @@ footer{
 #presentation-natalia>h1{
     color: black;
 }
-
