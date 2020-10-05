@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+h1{
+    color: darksalmon;
+    font-size: 40px;
+    font-family: Montserrat, cursive;
+    margin: 0;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
