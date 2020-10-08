@@ -186,12 +186,11 @@ h1{
 
 #presentation-jonas{
     background-image: url('../img/fondo_jonas.jpg');
-    background-size: 400px;
-    color: green;
+    background-size: cover;
+    color: yellow;
     background-position: center;
-    background-position-y: 10px;
 }
 
 #presentation-jonas>h1{
-    color: green;
+    color: yellow;
 }
