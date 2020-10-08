@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+main{
+    min-height: 600px;
+}
+
+footer{
+    color: white;
+    margin-top: 30px;
+}
 
 h1{
     color: darksalmon;
@@ -7,4 +17,169 @@ h1{
     margin: 0;
     padding-top: 11px;
     padding-bottom: 11px;
+}
+
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.car{
+    width: 300px;
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.caracteristica{
+    border-style: solid;
+    min-height: 100%;
+    padding: 5px;
+}
+
+.caracteristica>img{
+    width: 100%;
+}
+
+.caracteristica>p{
+    padding-top: 10px;
+}
+
+.caracteristica-div{
+    min-height: 100%;
+}
+
+.table-striped tbody tr:hover td{
+    background: darkgray;
+    color:black;
+}
+
+.tbl-row{
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+    .caracteristica-div{
+        margin-top:10px
+    }
+}
+
+.red{
+    height: 100%;
+}
+
+.input-group.md-form.form-sm.form-2 input.red-border {
+    border: 1px solid darksalmon;
+}
+
+.form-control:focus {
+    border-color: darksalmon;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.presentation-cards{
+    text-align: center;
+}
+
+.flip-div{
+    padding:20px;
+}
+
+.flip-card {
+    display: inline-flex;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back>h1 {
+    font-size: 30px;
+}
+
+.avatar1{
+    width: 100%;
+}
+
+#presentation-dan{
+    background-image: url('../img/fondo_dante.jpg');
+    background-size: cover;
+    background-color: #14213d;
+    color: #ffffff;
+}
+
+#presentation-dan>h1{
+    color: #ffffff;
+}
+
+#presentation-mariano{
+    background-image: url('../img/blue-denim-texture-background.jpg');
+    background-size: 400px;
+    background-position-x: center;
+    background-position-y: -100px;
+    background-color: #14213d;
+    color: #EAE2A7;
+}
+
+#presentation-mariano>h1{
+    color: #FFC05A;
+}
+
+#presentation-alesio{
+    background-image: url('../img/fondo-alesio.png');
+    background-size: 400px;
+    color: lightcyan;
+    background-position: center;
+    background-position-y: 10px;
+}
+
+#presentation-alesio>h1{
+    color: lightgray;
+}
+
+#presentation-natalia{
+    background-image: url('../img/fondo_natalia.jpg');
+    background-size: 400px;
+    background-position-x: center;
+    background-position-y: -100px;
+    color: black;
+}
+
+#presentation-natalia>h1{
+    color: black;
 }
