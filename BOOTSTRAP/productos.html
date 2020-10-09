@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <title>TP2 Productos</title>
@@ -18,8 +18,9 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <div class="title-container navbar-brand" id="container">
-                <h1>TeamReact</h1>
+            <div class="navbar-brand" id="container">
+                <h1 class="title d-none d-md-block">TeamReact</h1>
+                <h2 class="title d-block d-md-none my-auto">TeamReact</h2>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +41,7 @@
                         </a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="">
                             <i class="fas fa-parking"></i>
                             Productos
                         </a>
@@ -48,36 +49,32 @@
                 </ul>
             </div>
         </nav>
+        <ol class="breadcrumb d-flex d-md-none">
+            <li class="breadcrumb-item"><a href="./index.html">Principal</a></li>
+            <li class="breadcrumb-item active"><a href="">Productos</a></li>
+        </ol>
     </header>
     <main>
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="./index.html">Principal</a></li>
-            <li class="breadcrumb-item active"><a href="#">Productos</a></li>
-        </ol>
-        <div class="container">
-            <div class="row">
-                <div class="text-center">
+        <div class="container mt-md-4">
+            <div class="row mb-3">
+                <div class="text-center ml-3">
                     <h2>Catalogo de productos</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <div class="input-group md-form form-sm form-2 col-12 col-md-11">
-                        <input class="form-control my-0 py-1 red-border" id="searchbar" type="text" placeholder="Buscar"
-                            aria-label="Search">
-                        <div class="col-12 col-md-2 col-lg-1">
-                            <span class="d-md-flex justify-content-center input-group-text red lighten-3" id="searchbutton">
-                                <i class="fas fa-search text-grey" aria-hidden="true">
-                                </i>
-                                <i class="d-md-none" aria-hidden="true">
-                                    Buscar
-                                </i>
-                            </span>
-                        </div>
-                    </div>
+            <div class="row mb-3">
+                <div class="input-group md-form form-sm form-2 col-8 col-md-10">
+                    <input class="form-control red-border" id="searchbar" type="text" placeholder="Buscar" aria-label="Search">
+                </div>
+                <div class="col-4 col-md-2">
+                    <span class="d-md-flex justify-content-center input-group-text red lighten-3" id="searchbutton">
+                        <i class="fas fa-search text-grey" aria-hidden="true"></i>
+                        <i class="d-none d-md-flex" aria-hidden="true">
+                            Buscar
+                        </i>
+                    </span>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mb-3">
                 <div class="col">
                     <h4>Listado de Productos</h4>
                     <table class="table table-striped table-dark" id="table">
@@ -125,27 +122,21 @@
     <footer class="bg-dark">
         <div class="container">
             <div class="row">
-                <div class="footer-text col-6 ">
-                    © 2020 Trabajo Práctico Nº2
-                    3K4
+                <div class="footer-text col-6 my-auto">
+                    © 2020 Trabajo Práctico Nº2 3K4
                 </div>
-                <div class="col-6 d-flex justify-content-end">
-                    <div class="title-container">
-                        <h1>TeamReact</h1>
+                <div class="col-6">
+                    <div class="text-right">
+                        <h1 class="title d-none d-md-block">TeamReact</h1>
+                        <h5 class="title d-block d-md-none my-auto">TeamReact</h5>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/animation.js"></script>
     <script src="js/search.js"></script>
 </body>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <title>TP2 Principal</title>
@@ -10,16 +10,16 @@
     <script src="https://kit.fontawesome.com/3f4bb03b64.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <div class="title-container navbar-brand" id="container">
-                <h1>TeamReact</h1>
+            <div class="navbar-brand" id="container">
+                <h1 class="title d-none d-md-block">TeamReact</h1>
+                <h2 class="title d-block d-md-none my-auto">TeamReact</h2>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="">
                             <i class="fas fa-home"></i>
                             Principal
                         </a>
@@ -51,11 +51,11 @@
     </header>
     <main>
         <ol class="breadcrumb">
-            <li class="breadcrumb-item active"><a href="#">Principal</a></li>
+            <li class="breadcrumb-item active"><a href="">Principal</a></li>
         </ol>
         <div class="container">
-            <div class="row">
-                <div id="carouselControls" class="carousel slide col-lg-6 col-12" data-ride="carousel">
+            <div class="row mb-3">
+                <div id="firstCarousel" class="carousel slide col-12 col-lg-6 mb-3" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="d-block w-100" src="./img/c1-1.jpg" alt="First slide">
@@ -67,16 +67,16 @@
                             <img class="d-block w-100" src="./img/c1-3.jpg" alt="Third slide">
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#firstCarousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#firstCarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-                <div id="carouselControls2" class="carousel slide col-lg-6 col-12 d-none d-md-block"
+                <div id="SecondCarousel" class="carousel slide col-12 col-lg-6"
                     data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -89,11 +89,11 @@
                             <img class="d-block w-100" src="./img/c2-3.jpg" alt="Third slide">
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselControls2" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#SecondCarousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselControls2" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#SecondCarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -136,27 +136,21 @@
     <footer class="bg-dark">
         <div class="container">
             <div class="row">
-                <div class="footer-text col-6 ">
-                    © 2020 Trabajo Práctico Nº2
-                    3K4
+                <div class="footer-text col-6 my-auto">
+                    © 2020 Trabajo Práctico Nº2 3K4
                 </div>
-                <div class="col-6 d-flex justify-content-end">
-                    <div class="title-container">
-                        <h1>TeamReact</h1>
+                <div class="col-6">
+                    <div class="text-right">
+                        <h1 class="title d-none d-md-block">TeamReact</h1>
+                        <h5 class="title d-block d-md-none my-auto">TeamReact</h5>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/animation.js"></script>
 </body>
 
